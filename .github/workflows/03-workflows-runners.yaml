@@ -1,0 +1,18 @@
+name: 03-workflows-runners
+on: push
+jobs:
+  ubuntu-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show Os
+        run: |
+          echo "hello From $RUNNER_OS"
+          echo "bye ....bye"
+  windows-version:
+    runs-on: windows-latest
+    steps:
+      - name: Show Os
+        shell: bash
+        run: |
+          echo "hello From $RUNNER_OS"
+          echo "bye ....bye"
