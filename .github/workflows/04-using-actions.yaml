@@ -1,0 +1,15 @@
+name: 04-using-actions
+on: push
+jobs:
+  install-node:
+    runs-on: ubuntu-latest
+    steps:
+      - name: get-repo code
+        uses: actions/checkout@v4
+      - name: setup-node
+        uses: actions/setup-node@v3
+        with:
+          node_version: "20.x"
+      - name: install-depend
+        run: npm ci
+        working-directory: 04-using-actions/react-app
