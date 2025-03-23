@@ -15,4 +15,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Goodbye
-        run: echo "i will leave"
+        run: echo "i will leave now"
+  echo-bye:
+    runs-on: ububntu-latest
+    steps:
+      - name: say bye bye
+        run: echo "bye bye"
