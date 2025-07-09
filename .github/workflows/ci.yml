@@ -24,6 +24,6 @@ jobs:
     - name: Build and Push Docker image
       uses: docker/build-push-action@v5
       with:
-        context: .
+        context: simple-fastapi
         push: true
         tags: nadermamdouh869/simple-fastapi:latest
